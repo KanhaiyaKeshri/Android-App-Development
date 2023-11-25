@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FEDBD0"
+    android:minHeight="100dp">
+    <ImageView
+        android:id="@+id/image_resource_view"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:padding="16dp"
+        />
+    <LinearLayout
+        android:id="@+id/text_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        >
+
+        <TextView
+            android:id="@+id/contracters_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Contracter Name" />
+
+        <TextView
+            android:id="@+id/contracters_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            tools:text="Contracter Address" />
+    </LinearLayout>
+
+
+</LinearLayout>

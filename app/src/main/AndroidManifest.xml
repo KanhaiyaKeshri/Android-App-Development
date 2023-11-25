@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contact_contracting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Contact_Contracting">
+        <activity
+            android:name=".Customer_details"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".list_item"
+            android:exported="true" />
+        <activity
+            android:name=".LabourersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ElectricianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CarpenterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlumberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

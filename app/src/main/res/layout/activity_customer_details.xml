@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEDBD0"
+    tools:context=".Customer_details">
+
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:background="@color/default_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        android:id="@+id/selected_contractor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="Selected Contractor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#E64A19"/>
+
+    <TextView
+        android:id="@+id/contractor_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selected_contractor"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:hint="Kanhaiya"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contractor_address_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contractor_name_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:hint="Address"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_your_detail"
+        android:text="Enter Your Details"
+        android:layout_below="@+id/contractor_address_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#E64A19"/>
+
+    <TextView
+        android:id="@+id/customer_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_your_detail"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:text="Name"
+        android:textColor="#5D4037"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/customer_name_editview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_name_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:hint="                                    "
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_phone_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/customer_name_editview"
+        android:layout_marginTop="18dp"
+        android:textColor="#5D4037"
+       android:text="Mobile Number"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/customer_phone_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_phone_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:hint="                                    "
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_address_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/customer_phone_edittext"
+        android:layout_marginTop="18dp"
+        android:textColor="#5D4037"
+        android:text="Full Address"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/customer_address_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_address_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:hint="                                                          "
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/customer_confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_address_edittext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Place Order"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
